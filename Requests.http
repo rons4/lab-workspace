@@ -1,0 +1,18 @@
+###
+POST https://connect.signl4.com/webhook/{{$processEnv TEAM_SECRET}}
+Content-Type: application/json
+
+{
+    "Title": "Machine Alert",
+    "Message": "Temperature too high at machine AB12",
+    "X-S4-Service": "Temperature",
+    "X-S4-Location": "52.3984235,13.0544149",
+    "X-S4-AlertingScenario": "single_ack",
+    "X-S4-Filtering": false,
+    "X-S4-ExternalID": "X4AB12554444",
+    "X-S4-Status": "new",
+    "X-S4-SourceSystem": "",
+    "Link": "https://www.signl4.com"
+}
+
+###
